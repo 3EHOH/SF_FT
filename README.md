@@ -1,11 +1,11 @@
 # SF_FT
 Searchable food truck data in San Francisco
 
-Functional spec:
+<strong>Functional spec:</strong>
 
   This is a prototype for an interactive San Francisco food truck finder. Users can click markers on a map, enter coordinates in a modal, or use a text search to find their favorite nearby eateries on wheels.
 
-Technology Used: 
+<strong>Technology Used:</strong>
 
     -Language:
         -JavaScript
@@ -20,7 +20,7 @@ Technology Used:
     -Framework:
         -Meteor
 
-Focus: Front-end vs. Back-end:
+<strong>Focus: Front-end vs. Back-end:</strong>
 
   The focus was divided evenly. 
 
@@ -32,10 +32,10 @@ Focus: Front-end vs. Back-end:
 
   Using the EasySearch library and MongoDB text indexes, the app produces performant search results for a food truck's name, address, or menu. This was wedded with functionality to query the database after every keyup, which gives the front-end user a sensation of instant search results.  
 
-Architectural choices:
+<strong>Architectural choices:</strong>
 
   Given more time, I would improve the way the user interacts with the map. I would have the coordinate search remove all markers except the nearby trucks. I'd also have a MongoDB $geoNear query to find only trucks within the bounds of the map, so that 1) it's more performant, and 2) it's a less overwhelming number of markers for the user.
 
-Additional notes:
+<strong>Additional notes:</strong>
 
   Some style and code was taken from W3Schools and KQED, in order to mimic KQED's site more effectively. Comments in the code denote which pieces came from these sources.
