@@ -36,7 +36,7 @@ Searchable food truck data in San Francisco
 
   Given more time, I would improve the way the user interacts with the map. I would have the coordinate search remove all markers except the nearby trucks. I'd also have a MongoDB $geoNear query to find only trucks within the bounds of the map, so that 1) it's more performant, and 2) it's a less overwhelming number of markers for the user.
   
-  An additional issue is that the map does not display its markers until the user scrolls on it. Several stackoverflow solutions were tried, and with more time, one that works will be found.
+  An additional issue is that on some browsers the map does not display its markers until the user scrolls on it. Several stackoverflow solutions were tried, and with more time, one that works will be found.
 
 <strong>Additional notes:</strong>
 
