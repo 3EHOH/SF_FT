@@ -1,0 +1,237 @@
+<!--
+     This template is a mock-up of what a SF Food Truck Finder
+     might look like on KQED's site.
+-->
+
+<template name="ftDashboard">
+
+    <!--
+        The majority of this sidenav bar style and functionality comes from
+        W3School's sample: http://www.w3schools.com/howto/howto_js_sidenav.asp,
+        with additional style and content from KQED's site.
+     -->
+
+    <div id="mySidenav" class="sidenav">
+        <aside class="off-canvas-menu move-right">
+            <section class="menu-popular">
+                <a href="javascript:void(0)" class="closebtn">&times;</a>
+                <h2 class="screen-reader-text">Popular</h2>
+                <ul>
+                    <li class="link-home"><a href="http://www.kqed.org">KQED Home</a></li>
+                    <li class="link-listen"><a href="http://www.kqed.org/radio/listen/">Listen Live</a></li>
+                    <li class="link-watch"><a href="http://video.kqed.org/">Watch Episodes</a></li>
+                    <li class="link-podcasts"><a href="http://www.kqed.org/podcasts/">Podcasts</a></li>
+                    <li class="link-schedules"><a href="http://www.kqed.org/radio/schedules/daily/">Radio Schedules</a></li>
+                    <li class="link-schedules"><a href="http://www.kqed.org/tv/schedules/daily/">TV Schedules</a></li>
+                    <li class="link-mobile"><a href="http://www.kqed.org/mobile/">Mobile/Apps</a></li>
+                    <li class="link-donate"><a href="https://www.kqed.org/donate/">Donate</a></li>
+                </ul>
+            </section>
+            <section class="menu-sections">
+                <h2 class="screen-reader-text">Sections</h2>
+                <ul>
+                    <li><a href="http://www.kqed.org/radio/">Radio</a></li>
+                    <li><a href="http://www.kqed.org/tv/">TV</a></li>
+                    <li><a href="http://www.kqed.org/news/">News</a></li>
+                    <li><a href="http://www.kqed.org/arts/">Arts</a></li>
+                    <li><a href="http://www.kqed.org/food/">Food</a></li>
+                    <li><a href="http://www.kqed.org/science/">Science</a></li>
+                    <li><a href="http://www.kqed.org/education/">Education</a></li>
+                    <li><a href="http://www.kqed.org/support/">Support KQED</a></li>
+                    <li><a href="http://www.kqed.org/about/">About KQED</a></li>
+                </ul>
+            </section>
+            <section class="kqed-id">
+                <h2><a href="http://www.kqed.org"><!--[if gte IE 9]><!--><svg role="img" aria-label="KQED" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="163.999px" height="50px" viewBox="0 -0.532 163.999 50" enable-background="new 0 -0.532 163.999 50" xml:space="preserve">
+                    <title>KQED</title>
+                    <path class="logo-kqed-k" d="M11.611 21.634l-5.986 6.043v14.72H0V0.151h5.625v20.646L25.673 0.151h6.944L15.5 17.622l17.837 24.776H26.51L11.611 21.6 z"></path>
+                    <path class="logo-kqed-e" d="M91.906 23.204v14.104h24.405v5.123H86.246V0.016h29.339V5.2H91.906L91.9 18.004h20.543v5.2H91.906z"></path>
+                    <path class="logo-kqed-q" d="M76.839 21.117c0-11.908-9.752-21.649-21.611-21.649c-11.858 0-21.685 9.741-21.684 21.6 c0 11.9 9.7 21.7 21.7 21.685c3.77 0 7.316-0.965 10.4-2.67l6.682 8.273l4.182-3.369l-6.506-8.057 c4.198-3.967 6.842-9.644 6.842-15.862H76.839z M38.956 21.153c0-8.946 7.282-16.224 16.232-16.224s16.226 7.3 16.3 16.2 c0 8.946-7.276 16.229-16.226 16.229s-16.27-7.334-16.262-16.265L38.956 21.153z"></path>
+                    <path class="logo-kqed-d" d="M163.999 21.328c0-9.957-6.854-21.078-22.433-21.078h-16.375v42.147h16.438c13.906 0 22.36-10.232 22.36-21.069H163.999 z M131.045 5.454h9.478c11.981 0 17.4 7.3 17.4 15.875c0 5.263-3.197 15.862-17.121 15.862h-9.79V5.454H131.045z"></path>
+                    </svg>
+                    <!--<![endif]--></a></h2>
+                <span class="tagline">Public Media for Northern California</span>
+            </section>
+        </aside>
+    </div>
+
+
+    <!--
+        The majority of this navbar code and its style come directly
+        from Bootstrap, with some additional style from KQED's site.
+    -->
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <form class="navbar-form navbar-left">
+                    <button type='button' class="btn btn-default openNav" ><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
+                </form>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    KQED News
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Topics <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Programs & Blogs <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Special Coverage <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Bay Curious</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Donate</a></li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <button type='button' class="btn btn-default" ><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <!--
+        This jumbotron and its style comes from KQED's site.
+    -->
+    
+    <div class="widewrapper main">
+        <img id="jumbo-image" src="https://farm9.staticflickr.com/8746/16847444305_89f3fa107f_c.jpg" class="img-responsive">
+    </div>
+
+    <!--
+        This div contains the title and body of "the article"/tool.
+    -->
+
+    <div class="container" style="max-width:60%">
+
+        <div class="titleBox">
+            <h1 id="articleTitle" >Everything You Need to Know About San Francisco's Food Trucks in One Image</h1>
+            <h4 id="byLine"> By F.S. Developer</h4>
+        </div>
+
+        <br>
+
+        <p class="bodyText">
+            Looking for a food truck in San Francisco? Don't worry, here's everything you've wanted to know about them.
+            Transparent governance and big data never tasted so good and smelled so much like exhaust.
+        </p>
+
+        <div class="mapBtnDiv" style="text-align:center; padding-bottom:15px">
+            <button class="btn btn-success btn-lg searchLatLng" type="button">
+                Search by Coordinates
+                <span class="glyphicon glyphicon-search" aria-hidden="true">
+                </span>
+            </button>
+        </div>
+
+        <div class="map-container">
+            {{#if Template.subscriptionsReady}}
+                {{> googleMap name="exampleMap" options=exampleMapOptions}}
+            {{else}}
+                Loading...
+            {{/if}}
+        </div>
+
+        <br>
+
+        <p class="bodyText">Search by Truck Name, Menu, or Address</p>
+
+        <div id="searchDiv">
+            <form id="search-form">
+                <fieldset>
+                    <div class="input-group">
+                        <input type="text" class="form-control search-query searchText" onSubmit='return false' placeholder="Search..." />
+                        <span class="input-group-btn"><button class="btn btn-info  searchText" type="button"> <span class="glyphicon glyphicon-search" aria-hidden="true"></span></button></span>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        {{#if searchQuerying}}
+            <div class="table-responsive">
+
+                <table id="myTable" class="table table-bordered table-hover tablesorter">
+                    <thead>
+                    <tr id="headerRow">
+                        <th>Name</th>
+                        <th>Menu</th>
+                        <th>Hours</th>
+                        <th>Location</th>
+                        <th>Coordinates</th>
+                        <th>More Info</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{#each easySearchData}}
+                        <tr id="bodyRow">
+                            <td>{{applicant}}</td>
+                            <td>{{fooditems}}</td>
+                            <td>{{dayshours}}</td>
+                            <td>{{address}}</td>
+                            <td>{{latitude}}, {{longitude}}</td>
+                            <td>
+                                <span class="input-group-btn">
+                                    <button class="btn btn-info  searchTextBtn" type="button" id="{{__originalId._str}}">
+                                        <span class="glyphicon glyphicon-search" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                </span>
+                            </td>
+                        </tr>
+                    {{else}}
+                        NO DATA
+                    {{/each}}
+                    </tbody>
+
+                </table>
+            </div>
+        {{else}}
+            <div id="searchNoInput">No Search Input.</div>
+        {{/if}}
+    </div>
+
+    <br>
+
+</template>
