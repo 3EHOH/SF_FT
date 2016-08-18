@@ -1,8 +1,4 @@
 # SF_FT
-Searchable food truck data in San Francisco
-
-
-# SF_FT
 
 <strong>Searchable food truck data in San Francisco</strong>
 
