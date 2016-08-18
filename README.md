@@ -41,5 +41,3 @@ Searchable food truck data in San Francisco
 <strong>Additional notes:</strong>
 
   Some style and code was taken from W3Schools and KQED, in order to mimic KQED's site more effectively. Comments in the code denote which pieces came from these sources.
-
-http://sv.gearboxx.net:27501/ftDashboard
